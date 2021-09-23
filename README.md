@@ -1,2 +1,2 @@
 # heimamm.github.io
-first
+first static web
