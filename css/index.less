@@ -1,0 +1,219 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #f2f4f7;
+}
+
+// 约束当屏幕大于 750px 的时候，html字体大小就不不变化了 分成了20份
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #707070;
+}
+
+.wrap {
+  background-color: #fff;
+}
+
+header {
+  width: 100%;
+  height: 1.6rem;
+  font-size: .933333rem;
+  color: #1C1C1C;
+  text-align: center;
+  line-height: 1.6rem;
+  border-bottom: .026667rem solid #EAEAEA;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1.173333rem 0 1.6rem 0;
+
+  a {
+    display: flex;
+    flex: 33.33%;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 3.706667rem;
+      height: 3.706667rem;
+    }
+
+    span {
+      font-size: .933333rem;
+    }
+
+    &:nth-child(-n + 3) {
+      margin-bottom: 1.84rem;
+    }
+  }
+}
+
+.go {
+  margin: 0 .266667rem 0 .48rem;
+  padding-bottom: 1.146667rem;
+
+  img {
+    width: 19.253333rem;
+    height: 4.053333rem;
+  }
+}
+
+.content {
+  padding: 1.2rem .64rem;
+  margin-top: .266667rem;
+  background-color: #fff;
+
+  .content-head {
+    display: flex;
+    justify-content: space-between;
+    height: 1.013333rem;
+    margin-bottom: 1.04rem;
+
+    h4 {
+      font-size: .746667rem;
+      margin: 0; //清除h4默认的margin
+      color: #333;
+
+      img {
+        display: inline-block;
+        height: 1.013333rem;
+        width: 1.013333rem;
+        vertical-align: middle;
+        margin-right: .48rem;
+      }
+    }
+
+    a {
+      font-size: .586667rem;
+      color: #999999;
+    }
+  }
+}
+
+.get-job-box {
+  position: relative;
+
+  .swiper-container {
+    width: 14.4rem;
+    height: 100%;
+  }
+
+  //其余的图片
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+    opacity: .3;
+
+    a {
+      img {
+        width: 9.013333rem;
+        height: 10.026667rem;
+      }
+
+      p {
+        font-size: .666667rem;
+        color: #333333;
+        margin-top: .64rem;
+      }
+    }
+  }
+
+  //居中的图片
+  .swiper-slide-active,
+  .swiper-slide-duplicate-active {
+    transform: scale(1);
+    z-index: 9999;
+    opacity: 1;
+  }
+}
+
+.study-box {
+  padding-bottom: 2.666667rem;
+
+  .study-io {
+    padding: .266667rem;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    width: 7.733333rem;
+    height: 9.066667rem;
+    padding-top: .266667rem;
+    border-radius: .266667rem;
+    box-shadow: 0 0rem .266667rem rgba(0, 0, 0, .1);
+
+    h4 {
+      font-size: .693333rem;
+      font-weight: 400;
+      margin: .266667rem .16rem;
+    }
+
+    p {
+      padding-left: .16rem;
+      color: #FF4400;
+    }
+  }
+}
+
+.footer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.933333rem;
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 9999;
+
+  .item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 1.066667rem;
+      height: 1.066667rem;
+      margin-bottom: .16rem;
+    }
+
+    p {
+      font-size: .586667rem;
+      color: #666;
+    }
+
+    .first {
+      color: skyblue;
+    }
+  }
+}
